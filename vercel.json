@@ -1,0 +1,16 @@
+{
+  "version": 2,
+  "builds":[
+    {
+      "src": "/service/entryPoint.js",
+      "use": "@vercel/node"
+    }
+  ],
+  "routes": [
+    {
+      "src": "/(.*)",
+      "dest": "@vercel/node"
+    }
+  ]
+
+}
